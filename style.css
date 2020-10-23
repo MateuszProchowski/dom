@@ -1,0 +1,139 @@
+.rgd {
+  grid-template-columns: auto auto auto auto;
+  display: grid;
+  text-align: center;
+}
+
+.b:hover {
+  color: coral;
+  animation-name: nothing;
+  animation-duration: 1000ms;
+}
+
+.a:hover {
+  color: chocolate;
+  animation-name: zoom;
+  animation-duration: 500ms;
+}
+
+.c:hover {
+  color: crimson;
+  animation-name: ik;
+  animation-duration: 500ms;
+}
+
+.d:hover {
+  color: darkgoldenrod;
+  animation-name: lele;
+  animation-duration: 400ms;
+}
+
+@keyframes zoom {
+  from {
+    width: 100%;
+    height: 100%;
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+
+@keyframes nothing {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+@keyframes ik {
+  0% {
+    background-color: gold;
+  }
+  25% {
+    background-color: red;
+  }
+  50% {
+    background-color: green;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+@keyframes lele {
+  0% {
+    scale: 1;
+  }
+  25% {
+    transform: scale(1.6);
+  }
+  50% {
+    transform: rotate(50deg);
+  }
+  70% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+.orf {
+  overflow: hidden;
+}
+
+.paint {
+  width: 300px;
+  height: 210px;
+}
+
+.ramka {
+  border: 2px solid black;
+  overflow: hidden;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
+  background-color: blue;
+}
+
+.grid-item {
+  text-align: center;
+  font-size: 20px;
+  padding: 30px;
+  background-color: pink;
+  overflow: hidden;
+}
+
+.item1 {
+  grid-column: 1 / span 7;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 8;
+  grid-row: 1 / span 2;
+}
+
+.item3 {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+}
+
+.item4 {
+    grid-column: 5 / span 3;
+    grid-row: 2;
+}
+
+.item5 {
+  grid-column: 1 / span 8;
+  grid-row: 3;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
